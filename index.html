@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bmi calculator</title>
+</head>
+
+<link rel="stylesheet" href="style.css">
+<body class="body">
+    <div class="un"></div>
+<p class="oh">underweight</p>
+    <div class="normal"></div>
+    <p class="op">overweight</p>
+    <div class="over"></div>
+    <p class="ol">normal</p>
+    <div class="meter">
+    <div class="speedometer"></div>
+    <div class="center"></div>
+   
+<div class="circle"></div>
+<div class="bottomhide"></div>
+<div class="arrow-container">
+    <div class="arrow-wrapper speed-0" id="rotate">
+        <div class="arrow"></div>
+    </div>
+</div>
+</div>
+    <h1 class="h1">BMI CALCULATOR</h1>
+    <div class="master">
+    <div id="c1" class="c1">
+       <div id ="v1" class="v1"> 
+        <input type="text" id="weight" class="input1" placeholder="Enter your weight"><br>
+        <input type="text" id="foot" class="input2" placeholder="Enter your height in feet">
+        <input type="text" id="inches" class="input2" placeholder="inches"><br>
+        <button onclick="calculateBMI()"  id="enter" class="enter"> ENTER </button>
+    
+        <h3 id="output" class="output"></h3>
+        
+    </div>
+    <button id="convert" onclick="convert()" class="convert">Change Parameters</button>
+    <div id="v2">
+        <input type="text" id="weights" class="input1" placeholder="Enter your weight"><br>
+        <input type="text" id="meter" class="input2" placeholder="Enter your height in meter"><br>
+        <h3 id="outputs" class="output"></h3>
+        <h2 id="bhonk" class="view"></h2>
+        <h2 id="bol" class="another"></h2>
+        <button onclick="calculateBMI()" id="enter" class="enter"> ENTER </button>
+       
+    </div>
+</div>
+</div>
+<table class="cinfoT" align="center">
+    <tbody>
+        <tr>
+            <td class="cinfoHd">Classification</td>
+            <td class="cinfoHdL">BMI range - kg/m<sup>2</sup></td>
+        </tr>
+        <tr>
+            <td>Severe Thinness</td>
+            <td align="center">&lt; 16</td>
+        </tr>
+        <tr>
+            <td>Moderate Thinness</td>
+            <td align="center">16 - 17</td>
+        </tr>
+        <tr>
+            <td>Mild Thinness</td>
+            <td align="center">17 - 18.5</td>
+        </tr>
+        <tr>
+            <td>Normal</td>
+            <td align="center">18.5 - 25</td>
+        </tr>
+        <tr>
+            <td>Overweight</td>
+            <td align="center">25 - 30</td>
+        </tr>
+        <tr>
+            <td>Obese Class I</td>
+            <td align="center">30 - 35</td>
+        </tr>
+        <tr>
+            <td>Obese Class II</td>
+            <td align="center">35 - 40</td>
+        </tr>
+        <tr>
+            <td>Obese Class III</td>
+            <td align="center">&gt; 40</td>
+        </tr>
+    </tbody>
+</table>
+</body>
+<script src="bmi.js"></script>
+</html>
